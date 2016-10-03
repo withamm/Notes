@@ -1,0 +1,23 @@
+JSON.parse()和JSON.stringify()
+
+1.parse 用于从一个字符串中解析出json 对象。例如
+
+var str='{"name":"cpf","age":"23"}'
+
+经 JSON.parse(str) 得到：
+
+Object: age:"23"
+
+            name:"cpf"
+
+            _proto_:Object
+
+ps:单引号写在{}外，每个属性都必须双引号，否则会抛出异常
+
+2.stringify用于从一个对象解析出字符串，例如
+
+var a={a:1,b:2}
+
+经 JSON.stringify(a)得到：
+
+“{“a”:1,"b":2}”
