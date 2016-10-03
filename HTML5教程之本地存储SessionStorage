@@ -1,0 +1,12 @@
+HTML5教程之本地存储SessionStorage
+
+SessionStorage：
+	将数据保存在session对象中，所谓session是指用户在浏览某个网站时，从进入网站到浏览器关闭所经过的这段时间会话，也就是用户浏览这个网站所花费的时间就是session的生命周期。session对象可以用来保存在这段时间内所要求保存的任何数据。
+	此对象主要有两个方法：
+	保存数据：sessionStorage.setItem(Key, value);
+	读取数据：sessionStorage.getItem(Key);
+Key：表示你要存入的键名称，此名称可以随便命名，可以按照变量的意思来理解。
+Value：表示值，也就是你要存入Key中的值，可以按照变量赋值来理解。
+使用方法：
+	保存数据：sessionStorage.setItem("website", "W3Cfuns.com");
+	读取数据：sessionStorage.getItem("website");
